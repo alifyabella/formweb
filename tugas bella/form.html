@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  
+    <title>Pemesanan Gawai</title>
+</head>
+<img alt="Placeholder image for upload" class="image-placeholder" height="250" src="image/img2024-10-17 at 17.50.45.jpeg" width="250"/>
+
+<body>
+    <form method="get" action="hasil.html">
+    <form action="hasil.html" method="post">
+        <fieldset>
+            <legend>Data Pembeli</legend>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" name="alamat" required></textarea><br><br>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Gawai yang Dipesan</legend>
+            <label for="jenis">Jenis Gawai:</label>
+            <select id="jenis" name="jenis" required>
+                <option value="smartphone">Smartphone</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+            </select><br><br>
+
+            <label for="merek">Merek:</label>
+            <input type="text" id="merek" name="merek" required><br><br>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required><br><br>
+
+            <label for="warna">Warna:</label>
+            <input type="text" id="warna" name="warna" required><br><br>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Metode Pembayaran</legend>
+            <input type="radio" id="transfer" name="pembayaran" value="transfer" required>
+            <label for="transfer">Transfer Bank</label><br>
+
+            <input type="radio" id="kartu" name="pembayaran" value="kartu">
+            <label for="kartu">Kartu Kredit</label><br>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Catatan Tambahan</legend>
+            <textarea id="catatan" name="catatan"cols="30"raw"5"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Kirim Pemesanan">
+    </form>
+</body>
+</html>
